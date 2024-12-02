@@ -64,22 +64,22 @@ namespace ThesisManagementSystem
                         services.AddTransient<IDefenseScoreService, DefenseScoreService>();
 
                         // Đăng ký các Form
-                        services.AddTransient<LoginForm>();
-                        services.AddTransient<SelectThesisForm>();
-                        services.AddTransient<StudentForm>();
-                        services.AddTransient<LecturerForm>();
-                        services.AddTransient<AdminForm>();
-                        services.AddTransient<CreateCommitteeForm>();
-                        services.AddTransient<EditLecturerInCommitteeForm>();
-                        services.AddTransient<AddLecturerToCommitteeForm>();
-                        services.AddTransient<EditCommitteeForm>();
-                        services.AddTransient<RemoveLecturerForm>();
-                        services.AddTransient<UpdateStatusForm>();
-                        services.AddTransient<CreateUserForm>();
-                        services.AddTransient<CreateMilestoneForm>();
-                        services.AddTransient<EditMilestoneForm>();
-                        services.AddTransient<EditUserForm>();
-                        services.AddTransient<EditGroupForm>();
+                        services.AddTransient<DangNhapForm>();
+                        services.AddTransient<ChonDetaiForm>();
+                        services.AddTransient<SinhVienForm>();
+                        services.AddTransient<GiangVienForm>();
+                        services.AddTransient<QuanLyAdminForm>();
+                        services.AddTransient<TaoHoiDongForm>();
+                        services.AddTransient<ChinhSuaGiangVienHoiDongForm>();
+                        services.AddTransient<ThemGiangVienVaoHoiDongForm>();
+                        services.AddTransient<ChinhSuaHoiDongForm>();
+                        services.AddTransient<XoaGiangVienForm>();
+                        services.AddTransient<CapNhatTrangThaiForm>();
+                        services.AddTransient<TaoNguoiDungForm>();
+                        services.AddTransient<TaoCotMocForm>();
+                        services.AddTransient<ChinhSuaMocThoiGianForm>();
+                        services.AddTransient<ChinhSuaNguoiDungForm>();
+                        services.AddTransient<ChinhSuaNhomForm>();
                     })
                     .Build();
 
@@ -107,7 +107,7 @@ namespace ThesisManagementSystem
                     var services = serviceScope.ServiceProvider;
                     try
                     {
-                        var loginForm = services.GetRequiredService<LoginForm>();
+                        var loginForm = services.GetRequiredService<DangNhapForm>();
                         Application.Run(loginForm);
                     }
                     catch (Exception ex)

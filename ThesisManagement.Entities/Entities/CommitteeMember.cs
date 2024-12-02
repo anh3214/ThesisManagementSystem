@@ -21,8 +21,8 @@ namespace ThesisManagement.Entities
     }
     public enum RoleCommitteeMember
     {
-        Chairman,
-        Secretary,
-        Member
+        ChuTich,
+        ThuKy,
+        ThanhVien
     }
 }

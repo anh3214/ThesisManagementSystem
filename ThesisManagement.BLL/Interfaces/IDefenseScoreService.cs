@@ -10,7 +10,7 @@ namespace ThesisManagement.BLL.Interfaces
     public interface IDefenseScoreService
     {
         Task AddSync(Defense defense);
-        Task<(bool, Guid)> CheckHaveDefense(Guid idRegitation);
+        Task<(bool, Defense)> CheckHaveDefense(Guid idRegitation);
         Task<Defense> GetScore(Guid registationId);
         Task Update(Defense defense);
     }

@@ -51,7 +51,7 @@ namespace ThesisManagement.BLL.Services
             var lecturer = (await _unitOfWork.Lecturers.Find(x => x.User.UserID.Equals(userID), nameof(Lecturer.User), nameof(Lecturer.CommitteeMembers)))
                 .FirstOrDefault() ?? throw new Exception("Lecturer not found.");
             var chairmanCommittee = lecturer.CommitteeMembers
-                .FirstOrDefault(cm => cm.Role == RoleCommitteeMember.Chairman)?.Committee;
+                .FirstOrDefault(cm => cm.Role == RoleCommitteeMember.ChuTich)?.Committee;
 
             return chairmanCommittee == null ? (false, chairmanCommittee) : (true,chairmanCommittee);
         }

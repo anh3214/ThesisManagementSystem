@@ -14,12 +14,12 @@ namespace ThesisManagement.BLL.Services
             await _unitOfWork.Complete();
         }
 
-        public async Task<(bool,Guid)> CheckHaveDefense(Guid idRegitation)
+        public async Task<(bool, Defense)> CheckHaveDefense(Guid idRegitation)
         {
-            var score = await GetScore(idRegitation);
-            if (score == null) 
-                return (false,Guid.Empty);
-            return (true,score.DefenseID);
+            var defense = await _unitOfWork.Defenses.Find(x => x.RegistrationID.Equals(idRegitation), nameof(Defense.DefenseScores));
+            if (defense == null) 
+                return (false,new());
+            return (true, defense.First());
         }
 
         public async Task<Defense> GetScore(Guid registationId)

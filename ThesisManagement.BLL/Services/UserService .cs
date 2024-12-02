@@ -122,7 +122,7 @@ namespace ThesisManagement.BLL.Services
         }
         public async Task<IEnumerable<User>> GetAllUsersWithRoles()
         {
-            return await _unitOfWork.Users.GetAll();
+            return await _unitOfWork.Users.GetAll(nameof(User.Student),nameof(User.Lecturer));
         }
 
         public async Task<IEnumerable<Lecturer>> GetAllLecturers()

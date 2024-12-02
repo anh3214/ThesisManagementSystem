@@ -48,17 +48,17 @@ namespace ThesisManagement.BLL.Services
             }
 
             // Kiểm tra số lượng Chairman và Secretary
-            if (role == RoleCommitteeMember.Chairman)
+            if (role == RoleCommitteeMember.ChuTich)
             {
-                var chairmanCount = await _unitOfWork.CommitteeMembers.CountByCommitteeAndRole(committeeID, RoleCommitteeMember.Chairman);
+                var chairmanCount = await _unitOfWork.CommitteeMembers.CountByCommitteeAndRole(committeeID, RoleCommitteeMember.ChuTich);
                 if (chairmanCount >= 1)
                 {
                     throw new Exception("Committee already has a Chairman.");
                 }
             }
-            else if (role == RoleCommitteeMember.Secretary)
+            else if (role == RoleCommitteeMember.ThuKy)
             {
-                var secretaryCount = await _unitOfWork.CommitteeMembers.CountByCommitteeAndRole(committeeID, RoleCommitteeMember.Secretary);
+                var secretaryCount = await _unitOfWork.CommitteeMembers.CountByCommitteeAndRole(committeeID, RoleCommitteeMember.ThuKy);
                 if (secretaryCount >= 1)
                 {
                     throw new Exception("Committee already has a Secretary.");
@@ -116,17 +116,17 @@ namespace ThesisManagement.BLL.Services
             // Kiểm tra số lượng Chairman và Secretary nếu vai trò thay đổi
             if (committeeMember.Role != newRole)
             {
-                if (newRole == RoleCommitteeMember.Chairman)
+                if (newRole == RoleCommitteeMember.ChuTich)
                 {
-                    var chairmanCount = await _unitOfWork.CommitteeMembers.CountByCommitteeAndRole(committeeMember.CommitteeID, RoleCommitteeMember.Chairman);
+                    var chairmanCount = await _unitOfWork.CommitteeMembers.CountByCommitteeAndRole(committeeMember.CommitteeID, RoleCommitteeMember.ChuTich);
                     if (chairmanCount >= 1)
                     {
                         throw new Exception("Committee already has a Chairman.");
                     }
                 }
-                else if (newRole == RoleCommitteeMember.Secretary)
+                else if (newRole == RoleCommitteeMember.ThuKy)
                 {
-                    var secretaryCount = await _unitOfWork.CommitteeMembers.CountByCommitteeAndRole(committeeMember.CommitteeID, RoleCommitteeMember.Secretary);
+                    var secretaryCount = await _unitOfWork.CommitteeMembers.CountByCommitteeAndRole(committeeMember.CommitteeID, RoleCommitteeMember.ThuKy);
                     if (secretaryCount >= 1)
                     {
                         throw new Exception("Committee already has a Secretary.");

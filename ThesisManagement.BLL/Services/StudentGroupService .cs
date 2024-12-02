@@ -40,7 +40,14 @@ namespace ThesisManagement.BLL.Services
 
         public async Task<List<StudentGroup>> GetAllGroups()
         {
-            return (await _unitOfWork.StudentGroups.GetAll(nameof(StudentGroup.Students), nameof(StudentGroup.GroupLeader), nameof(StudentGroup.Registration))).ToList();
+            return (await _unitOfWork.StudentGroups.GetAll(
+                nameof(StudentGroup.Students),
+                nameof(StudentGroup.Advisor), 
+                nameof(StudentGroup.GroupLeader), 
+                nameof(StudentGroup.Registration),
+                nameof(StudentGroup.GroupLeader),
+                $"{nameof(StudentGroup.GroupLeader)}.{nameof(Student.User)}",
+                nameof(StudentGroup.Committee))).ToList();
         }
 
         public async Task<IEnumerable<StudentGroup>> GetGroupsByWhereClause(Expression<Func<StudentGroup, bool>> predicate)
