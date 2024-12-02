@@ -1,0 +1,280 @@
+2024-12-01 18:41:58.514 +07:00 [INF] Starting application
+2024-12-01 18:41:58.581 +07:00 [FTL] Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Write[T](DiagnosticListener diagnosticSource, String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at ThesisManagementSystem.Program.Main() in D:\Code\WF\ThesisManagementSystem\ThesisManagementSystem\Program.cs:line 40
+2024-12-01 18:41:59.039 +07:00 [WRN] No store type was specified for the decimal property 'Score' on entity type 'DefenseScore'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-01 18:41:59.040 +07:00 [WRN] No store type was specified for the decimal property 'Score' on entity type 'Evaluation'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-01 18:41:59.040 +07:00 [WRN] No store type was specified for the decimal property 'AdvisorWeight' on entity type 'ScoreWeight'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-01 18:41:59.040 +07:00 [WRN] No store type was specified for the decimal property 'CommitteeWeight' on entity type 'ScoreWeight'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-01 18:41:59.040 +07:00 [WRN] No store type was specified for the decimal property 'ReviewerWeight' on entity type 'ScoreWeight'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-01 18:41:59.435 +07:00 [INF] Executed DbCommand (116ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [ThesisDB];
+2024-12-01 18:41:59.477 +07:00 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [ThesisDB] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2024-12-01 18:41:59.488 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-12-01 18:41:59.490 +07:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2024-12-01 18:41:59.502 +07:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2024-12-01 18:41:59.532 +07:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2024-12-01 18:41:59.538 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-12-01 18:41:59.539 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-12-01 18:41:59.546 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-12-01 18:41:59.554 +07:00 [INF] Applying migration '20241127185230_UpdateDeleteBehavior'.
+2024-12-01 18:41:59.582 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Committees] (
+    [CommitteeID] uniqueidentifier NOT NULL,
+    [Name] nvarchar(100) NOT NULL,
+    [DefenseDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Committees] PRIMARY KEY ([CommitteeID])
+);
+2024-12-01 18:41:59.583 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Milestones] (
+    [MilestoneID] uniqueidentifier NOT NULL,
+    [Name] nvarchar(100) NOT NULL,
+    [Description] nvarchar(max) NOT NULL,
+    [Deadline] datetime2 NOT NULL,
+    CONSTRAINT [PK_Milestones] PRIMARY KEY ([MilestoneID])
+);
+2024-12-01 18:41:59.584 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ScoreWeights] (
+    [WeightID] uniqueidentifier NOT NULL,
+    [AdvisorWeight] decimal(18,2) NOT NULL,
+    [ReviewerWeight] decimal(18,2) NOT NULL,
+    [CommitteeWeight] decimal(18,2) NOT NULL,
+    [EffectiveDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_ScoreWeights] PRIMARY KEY ([WeightID])
+);
+2024-12-01 18:41:59.584 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Users] (
+    [UserID] uniqueidentifier NOT NULL,
+    [Username] nvarchar(100) NOT NULL,
+    [Password] nvarchar(max) NOT NULL,
+    [Role] int NOT NULL,
+    CONSTRAINT [PK_Users] PRIMARY KEY ([UserID])
+);
+2024-12-01 18:41:59.586 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Lecturers] (
+    [LecturerID] uniqueidentifier NOT NULL,
+    [Name] nvarchar(200) NOT NULL,
+    [Department] nvarchar(100) NOT NULL,
+    CONSTRAINT [PK_Lecturers] PRIMARY KEY ([LecturerID]),
+    CONSTRAINT [FK_Lecturers_Users_LecturerID] FOREIGN KEY ([LecturerID]) REFERENCES [Users] ([UserID]) ON DELETE NO ACTION
+);
+2024-12-01 18:41:59.587 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [CommitteeMembers] (
+    [CommitteeID] uniqueidentifier NOT NULL,
+    [LecturerID] uniqueidentifier NOT NULL,
+    [Role] int NOT NULL,
+    CONSTRAINT [PK_CommitteeMembers] PRIMARY KEY ([CommitteeID], [LecturerID]),
+    CONSTRAINT [FK_CommitteeMembers_Committees_CommitteeID] FOREIGN KEY ([CommitteeID]) REFERENCES [Committees] ([CommitteeID]) ON DELETE NO ACTION,
+    CONSTRAINT [FK_CommitteeMembers_Lecturers_LecturerID] FOREIGN KEY ([LecturerID]) REFERENCES [Lecturers] ([LecturerID]) ON DELETE NO ACTION
+);
+2024-12-01 18:41:59.588 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Topics] (
+    [TopicID] uniqueidentifier NOT NULL,
+    [LecturerID] uniqueidentifier NOT NULL,
+    [Title] nvarchar(200) NOT NULL,
+    [Description] nvarchar(max) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Topics] PRIMARY KEY ([TopicID]),
+    CONSTRAINT [FK_Topics_Lecturers_LecturerID] FOREIGN KEY ([LecturerID]) REFERENCES [Lecturers] ([LecturerID]) ON DELETE NO ACTION
+);
+2024-12-01 18:41:59.589 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Defenses] (
+    [DefenseID] uniqueidentifier NOT NULL,
+    [RegistrationID] uniqueidentifier NOT NULL,
+    [CommitteeID] uniqueidentifier NOT NULL,
+    [DefenseDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Defenses] PRIMARY KEY ([DefenseID]),
+    CONSTRAINT [FK_Defenses_Committees_CommitteeID] FOREIGN KEY ([CommitteeID]) REFERENCES [Committees] ([CommitteeID]) ON DELETE NO ACTION
+);
+2024-12-01 18:41:59.591 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [DefenseScores] (
+    [DefenseID] uniqueidentifier NOT NULL,
+    [LecturerID] uniqueidentifier NOT NULL,
+    [Score] decimal(18,2) NOT NULL,
+    [Comments] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_DefenseScores] PRIMARY KEY ([DefenseID], [LecturerID]),
+    CONSTRAINT [FK_DefenseScores_Defenses_DefenseID] FOREIGN KEY ([DefenseID]) REFERENCES [Defenses] ([DefenseID]) ON DELETE NO ACTION,
+    CONSTRAINT [FK_DefenseScores_Lecturers_LecturerID] FOREIGN KEY ([LecturerID]) REFERENCES [Lecturers] ([LecturerID]) ON DELETE NO ACTION
+);
+2024-12-01 18:41:59.592 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Evaluations] (
+    [EvaluationID] uniqueidentifier NOT NULL,
+    [RegistrationID] uniqueidentifier NOT NULL,
+    [EvaluatorID] uniqueidentifier NOT NULL,
+    [Score] decimal(18,2) NOT NULL,
+    [Comments] nvarchar(max) NOT NULL,
+    [Role] int NOT NULL,
+    [EvaluationDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Evaluations] PRIMARY KEY ([EvaluationID]),
+    CONSTRAINT [FK_Evaluations_Lecturers_EvaluatorID] FOREIGN KEY ([EvaluatorID]) REFERENCES [Lecturers] ([LecturerID]) ON DELETE CASCADE
+);
+2024-12-01 18:41:59.593 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Registrations] (
+    [RegistrationID] uniqueidentifier NOT NULL,
+    [GroupID] uniqueidentifier NOT NULL,
+    [TopicID] uniqueidentifier NOT NULL,
+    [Status] int NOT NULL,
+    [RegistrationDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_Registrations] PRIMARY KEY ([RegistrationID]),
+    CONSTRAINT [FK_Registrations_Topics_TopicID] FOREIGN KEY ([TopicID]) REFERENCES [Topics] ([TopicID]) ON DELETE NO ACTION
+);
+2024-12-01 18:41:59.593 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [StudentGroups] (
+    [GroupID] uniqueidentifier NOT NULL,
+    [GroupName] nvarchar(100) NOT NULL,
+    [CreatedDate] datetime2 NOT NULL,
+    [GroupLeaderID] uniqueidentifier NOT NULL,
+    CONSTRAINT [PK_StudentGroups] PRIMARY KEY ([GroupID])
+);
+2024-12-01 18:41:59.595 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Students] (
+    [StudentID] uniqueidentifier NOT NULL,
+    [Name] nvarchar(200) NOT NULL,
+    [Class] nvarchar(50) NOT NULL,
+    [GroupID] uniqueidentifier NULL,
+    CONSTRAINT [PK_Students] PRIMARY KEY ([StudentID]),
+    CONSTRAINT [FK_Students_StudentGroups_GroupID] FOREIGN KEY ([GroupID]) REFERENCES [StudentGroups] ([GroupID]) ON DELETE NO ACTION,
+    CONSTRAINT [FK_Students_Users_StudentID] FOREIGN KEY ([StudentID]) REFERENCES [Users] ([UserID]) ON DELETE NO ACTION
+);
+2024-12-01 18:41:59.597 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Submissions] (
+    [SubmissionID] uniqueidentifier NOT NULL,
+    [RegistrationID] uniqueidentifier NOT NULL,
+    [MilestoneID] uniqueidentifier NOT NULL,
+    [SubmissionDate] datetime2 NOT NULL,
+    [DocumentPath] nvarchar(max) NOT NULL,
+    [StudentID] uniqueidentifier NULL,
+    CONSTRAINT [PK_Submissions] PRIMARY KEY ([SubmissionID]),
+    CONSTRAINT [FK_Submissions_Milestones_MilestoneID] FOREIGN KEY ([MilestoneID]) REFERENCES [Milestones] ([MilestoneID]) ON DELETE NO ACTION,
+    CONSTRAINT [FK_Submissions_Registrations_RegistrationID] FOREIGN KEY ([RegistrationID]) REFERENCES [Registrations] ([RegistrationID]) ON DELETE NO ACTION,
+    CONSTRAINT [FK_Submissions_Students_StudentID] FOREIGN KEY ([StudentID]) REFERENCES [Students] ([StudentID])
+);
+2024-12-01 18:41:59.597 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_CommitteeMembers_LecturerID] ON [CommitteeMembers] ([LecturerID]);
+2024-12-01 18:41:59.598 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Defenses_CommitteeID] ON [Defenses] ([CommitteeID]);
+2024-12-01 18:41:59.598 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_Defenses_RegistrationID] ON [Defenses] ([RegistrationID]);
+2024-12-01 18:41:59.599 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_DefenseScores_LecturerID] ON [DefenseScores] ([LecturerID]);
+2024-12-01 18:41:59.600 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Evaluations_EvaluatorID] ON [Evaluations] ([EvaluatorID]);
+2024-12-01 18:41:59.600 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Evaluations_RegistrationID] ON [Evaluations] ([RegistrationID]);
+2024-12-01 18:41:59.601 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE UNIQUE INDEX [IX_Registrations_GroupID] ON [Registrations] ([GroupID]);
+2024-12-01 18:41:59.601 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Registrations_TopicID] ON [Registrations] ([TopicID]);
+2024-12-01 18:41:59.602 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_StudentGroups_GroupLeaderID] ON [StudentGroups] ([GroupLeaderID]);
+2024-12-01 18:41:59.602 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Students_GroupID] ON [Students] ([GroupID]);
+2024-12-01 18:41:59.602 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Submissions_MilestoneID] ON [Submissions] ([MilestoneID]);
+2024-12-01 18:41:59.603 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Submissions_RegistrationID] ON [Submissions] ([RegistrationID]);
+2024-12-01 18:41:59.603 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Submissions_StudentID] ON [Submissions] ([StudentID]);
+2024-12-01 18:41:59.604 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Topics_LecturerID] ON [Topics] ([LecturerID]);
+2024-12-01 18:41:59.606 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Defenses] ADD CONSTRAINT [FK_Defenses_Registrations_RegistrationID] FOREIGN KEY ([RegistrationID]) REFERENCES [Registrations] ([RegistrationID]) ON DELETE NO ACTION;
+2024-12-01 18:41:59.606 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Evaluations] ADD CONSTRAINT [FK_Evaluations_Registrations_RegistrationID] FOREIGN KEY ([RegistrationID]) REFERENCES [Registrations] ([RegistrationID]) ON DELETE NO ACTION;
+2024-12-01 18:41:59.607 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Registrations] ADD CONSTRAINT [FK_Registrations_StudentGroups_GroupID] FOREIGN KEY ([GroupID]) REFERENCES [StudentGroups] ([GroupID]) ON DELETE NO ACTION;
+2024-12-01 18:41:59.608 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [StudentGroups] ADD CONSTRAINT [FK_StudentGroups_Students_GroupLeaderID] FOREIGN KEY ([GroupLeaderID]) REFERENCES [Students] ([StudentID]) ON DELETE NO ACTION;
+2024-12-01 18:41:59.610 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20241127185230_UpdateDeleteBehavior', N'9.0.0');
+2024-12-01 18:41:59.610 +07:00 [INF] Applying migration '20241128102609_updateStuden'.
+2024-12-01 18:41:59.624 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Students] ADD [MSSV] nvarchar(50) NOT NULL DEFAULT N'';
+2024-12-01 18:41:59.625 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20241128102609_updateStuden', N'9.0.0');
+2024-12-01 18:41:59.625 +07:00 [INF] Applying migration '20241201075014_update-relationship'.
+2024-12-01 18:41:59.641 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP INDEX [IX_Registrations_GroupID] ON [Registrations];
+2024-12-01 18:41:59.642 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Registrations_GroupID] ON [Registrations] ([GroupID]);
+2024-12-01 18:41:59.642 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20241201075014_update-relationship', N'9.0.0');
+2024-12-01 18:41:59.642 +07:00 [INF] Applying migration '20241201112915_update'.
+2024-12-01 18:41:59.657 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Evaluations] ADD [MilestoneId] uniqueidentifier NOT NULL DEFAULT '00000000-0000-0000-0000-000000000000';
+2024-12-01 18:41:59.658 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Evaluations_MilestoneId] ON [Evaluations] ([MilestoneId]);
+2024-12-01 18:41:59.658 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Evaluations] ADD CONSTRAINT [FK_Evaluations_Milestones_MilestoneId] FOREIGN KEY ([MilestoneId]) REFERENCES [Milestones] ([MilestoneID]) ON DELETE NO ACTION;
+2024-12-01 18:41:59.659 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20241201112915_update', N'9.0.0');
+2024-12-01 18:41:59.659 +07:00 [INF] Applying migration '20241201114036_update_database'.
+2024-12-01 18:41:59.672 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [StudentGroups] ADD [AdvisorID] uniqueidentifier NOT NULL DEFAULT '00000000-0000-0000-0000-000000000000';
+2024-12-01 18:41:59.673 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [StudentGroups] ADD [CommiteID] uniqueidentifier NOT NULL DEFAULT '00000000-0000-0000-0000-000000000000';
+2024-12-01 18:41:59.674 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [StudentGroups] ADD [CommiteeId] uniqueidentifier NOT NULL DEFAULT '00000000-0000-0000-0000-000000000000';
+2024-12-01 18:41:59.674 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_StudentGroups_AdvisorID] ON [StudentGroups] ([AdvisorID]);
+2024-12-01 18:41:59.675 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_StudentGroups_CommiteID] ON [StudentGroups] ([CommiteID]);
+2024-12-01 18:41:59.675 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [StudentGroups] ADD CONSTRAINT [FK_StudentGroups_Committees_CommiteID] FOREIGN KEY ([CommiteID]) REFERENCES [Committees] ([CommitteeID]) ON DELETE NO ACTION;
+2024-12-01 18:41:59.676 +07:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [StudentGroups] ADD CONSTRAINT [FK_StudentGroups_Lecturers_AdvisorID] FOREIGN KEY ([AdvisorID]) REFERENCES [Lecturers] ([LecturerID]) ON DELETE NO ACTION;
+2024-12-01 18:41:59.676 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20241201114036_update_database', N'9.0.0');
+2024-12-01 18:41:59.682 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2024-12-01 19:03:42.116 +07:00 [INF] Starting application
+2024-12-01 19:03:42.188 +07:00 [FTL] Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Write[T](DiagnosticListener diagnosticSource, String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at ThesisManagementSystem.Program.Main() in D:\Code\WF\ThesisManagementSystem\ThesisManagementSystem\Program.cs:line 40
+2024-12-01 19:03:42.657 +07:00 [WRN] No store type was specified for the decimal property 'Score' on entity type 'DefenseScore'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-01 19:03:42.658 +07:00 [WRN] No store type was specified for the decimal property 'Score' on entity type 'Evaluation'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-01 19:03:42.658 +07:00 [WRN] No store type was specified for the decimal property 'AdvisorWeight' on entity type 'ScoreWeight'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-01 19:03:42.658 +07:00 [WRN] No store type was specified for the decimal property 'CommitteeWeight' on entity type 'ScoreWeight'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-01 19:03:42.658 +07:00 [WRN] No store type was specified for the decimal property 'ReviewerWeight' on entity type 'ScoreWeight'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.

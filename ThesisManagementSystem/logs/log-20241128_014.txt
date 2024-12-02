@@ -1,0 +1,37 @@
+2024-11-28 17:25:37.388 +07:00 [INF] Starting application
+2024-11-28 17:25:37.550 +07:00 [FTL] Application terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: ThesisManagementSystem.Forms.RemoveLecturerForm Lifetime: Transient ImplementationType: ThesisManagementSystem.Forms.RemoveLecturerForm': Unable to resolve service for type 'System.Collections.Generic.List`1[ThesisManagement.Entities.CommitteeMember]' while attempting to activate 'ThesisManagementSystem.Forms.RemoveLecturerForm'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ThesisManagementSystem.Forms.RemoveLecturerForm Lifetime: Transient ImplementationType: ThesisManagementSystem.Forms.RemoveLecturerForm': Unable to resolve service for type 'System.Collections.Generic.List`1[ThesisManagement.Entities.CommitteeMember]' while attempting to activate 'ThesisManagementSystem.Forms.RemoveLecturerForm'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'System.Collections.Generic.List`1[ThesisManagement.Entities.CommitteeMember]' while attempting to activate 'ThesisManagementSystem.Forms.RemoveLecturerForm'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at ThesisManagementSystem.Program.Main() in D:\Code\WF\ThesisManagementSystem\ThesisManagementSystem\Program.cs:line 40
+2024-11-28 17:25:52.916 +07:00 [INF] Starting application
+2024-11-28 17:25:52.982 +07:00 [FTL] Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Write[T](DiagnosticListener diagnosticSource, String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at ThesisManagementSystem.Program.Main() in D:\Code\WF\ThesisManagementSystem\ThesisManagementSystem\Program.cs:line 40
+2024-11-28 17:25:53.948 +07:00 [WRN] No store type was specified for the decimal property 'Score' on entity type 'DefenseScore'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-11-28 17:25:53.949 +07:00 [WRN] No store type was specified for the decimal property 'Score' on entity type 'Evaluation'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-11-28 17:25:53.949 +07:00 [WRN] No store type was specified for the decimal property 'AdvisorWeight' on entity type 'ScoreWeight'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-11-28 17:25:53.949 +07:00 [WRN] No store type was specified for the decimal property 'CommitteeWeight' on entity type 'ScoreWeight'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-11-28 17:25:53.949 +07:00 [WRN] No store type was specified for the decimal property 'ReviewerWeight' on entity type 'ScoreWeight'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.

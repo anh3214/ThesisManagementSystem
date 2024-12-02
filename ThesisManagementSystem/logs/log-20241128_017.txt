@@ -1,0 +1,64 @@
+2024-11-28 18:01:22.900 +07:00 [INF] Starting application
+2024-11-28 18:01:22.967 +07:00 [FTL] Application terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: ThesisManagementSystem.Forms.RemoveLecturerForm Lifetime: Transient ImplementationType: ThesisManagementSystem.Forms.RemoveLecturerForm': Unable to resolve service for type 'System.Collections.Generic.List`1[ThesisManagement.Entities.CommitteeMember]' while attempting to activate 'ThesisManagementSystem.Forms.RemoveLecturerForm'.) (Error while validating the service descriptor 'ServiceType: ThesisManagementSystem.Forms.UpdateStatusForm Lifetime: Transient ImplementationType: ThesisManagementSystem.Forms.UpdateStatusForm': Unable to resolve service for type 'System.String' while attempting to activate 'ThesisManagementSystem.Forms.UpdateStatusForm'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ThesisManagementSystem.Forms.RemoveLecturerForm Lifetime: Transient ImplementationType: ThesisManagementSystem.Forms.RemoveLecturerForm': Unable to resolve service for type 'System.Collections.Generic.List`1[ThesisManagement.Entities.CommitteeMember]' while attempting to activate 'ThesisManagementSystem.Forms.RemoveLecturerForm'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'System.Collections.Generic.List`1[ThesisManagement.Entities.CommitteeMember]' while attempting to activate 'ThesisManagementSystem.Forms.RemoveLecturerForm'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at ThesisManagementSystem.Program.Main() in D:\Code\WF\ThesisManagementSystem\ThesisManagementSystem\Program.cs:line 40
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ThesisManagementSystem.Forms.UpdateStatusForm Lifetime: Transient ImplementationType: ThesisManagementSystem.Forms.UpdateStatusForm': Unable to resolve service for type 'System.String' while attempting to activate 'ThesisManagementSystem.Forms.UpdateStatusForm'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'System.String' while attempting to activate 'ThesisManagementSystem.Forms.UpdateStatusForm'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2024-11-28 18:01:32.071 +07:00 [INF] Starting application
+2024-11-28 18:01:32.137 +07:00 [FTL] Application terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: ThesisManagementSystem.Forms.RemoveLecturerForm Lifetime: Transient ImplementationType: ThesisManagementSystem.Forms.RemoveLecturerForm': Unable to resolve service for type 'System.Collections.Generic.List`1[ThesisManagement.Entities.CommitteeMember]' while attempting to activate 'ThesisManagementSystem.Forms.RemoveLecturerForm'.) (Error while validating the service descriptor 'ServiceType: ThesisManagementSystem.Forms.UpdateStatusForm Lifetime: Transient ImplementationType: ThesisManagementSystem.Forms.UpdateStatusForm': Unable to resolve service for type 'System.String' while attempting to activate 'ThesisManagementSystem.Forms.UpdateStatusForm'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ThesisManagementSystem.Forms.RemoveLecturerForm Lifetime: Transient ImplementationType: ThesisManagementSystem.Forms.RemoveLecturerForm': Unable to resolve service for type 'System.Collections.Generic.List`1[ThesisManagement.Entities.CommitteeMember]' while attempting to activate 'ThesisManagementSystem.Forms.RemoveLecturerForm'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'System.Collections.Generic.List`1[ThesisManagement.Entities.CommitteeMember]' while attempting to activate 'ThesisManagementSystem.Forms.RemoveLecturerForm'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at ThesisManagementSystem.Program.Main() in D:\Code\WF\ThesisManagementSystem\ThesisManagementSystem\Program.cs:line 40
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ThesisManagementSystem.Forms.UpdateStatusForm Lifetime: Transient ImplementationType: ThesisManagementSystem.Forms.UpdateStatusForm': Unable to resolve service for type 'System.String' while attempting to activate 'ThesisManagementSystem.Forms.UpdateStatusForm'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'System.String' while attempting to activate 'ThesisManagementSystem.Forms.UpdateStatusForm'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+

@@ -1,0 +1,106 @@
+2024-12-01 14:50:34.284 +07:00 [INF] Starting application
+2024-12-01 14:50:34.358 +07:00 [FTL] Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at System.Diagnostics.DiagnosticSource.Write[T](String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Write[T](DiagnosticListener diagnosticSource, String name, T value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at ThesisManagementSystem.Program.Main() in D:\Code\WF\ThesisManagementSystem\ThesisManagementSystem\Program.cs:line 40
+2024-12-01 14:50:34.815 +07:00 [WRN] No store type was specified for the decimal property 'Score' on entity type 'DefenseScore'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-01 14:50:34.816 +07:00 [WRN] No store type was specified for the decimal property 'Score' on entity type 'Evaluation'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-01 14:50:34.816 +07:00 [WRN] No store type was specified for the decimal property 'AdvisorWeight' on entity type 'ScoreWeight'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-01 14:50:34.816 +07:00 [WRN] No store type was specified for the decimal property 'CommitteeWeight' on entity type 'ScoreWeight'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-01 14:50:34.816 +07:00 [WRN] No store type was specified for the decimal property 'ReviewerWeight' on entity type 'ScoreWeight'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-12-01 14:50:35.637 +07:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-12-01 14:50:35.643 +07:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2024-12-01 14:50:35.663 +07:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2024-12-01 14:50:35.703 +07:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2024-12-01 14:50:35.710 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-12-01 14:50:35.711 +07:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-12-01 14:50:35.717 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-12-01 14:50:35.725 +07:00 [INF] Applying migration '20241201075014_update-relationship'.
+2024-12-01 14:50:35.753 +07:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP INDEX [IX_Registrations_GroupID] ON [Registrations];
+2024-12-01 14:50:35.780 +07:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Registrations_GroupID] ON [Registrations] ([GroupID]);
+2024-12-01 14:50:35.782 +07:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20241201075014_update-relationship', N'9.0.0');
+2024-12-01 14:50:35.789 +07:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2024-12-01 18:19:28.368 +07:00 [INF] Starting application
+2024-12-01 18:19:28.437 +07:00 [FTL] Application terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: ThesisManagementSystem.Forms.RemoveLecturerForm Lifetime: Transient ImplementationType: ThesisManagementSystem.Forms.RemoveLecturerForm': Unable to resolve service for type 'System.Collections.Generic.List`1[ThesisManagement.Entities.CommitteeMember]' while attempting to activate 'ThesisManagementSystem.Forms.RemoveLecturerForm'.) (Error while validating the service descriptor 'ServiceType: ThesisManagementSystem.Forms.UpdateStatusForm Lifetime: Transient ImplementationType: ThesisManagementSystem.Forms.UpdateStatusForm': Unable to resolve service for type 'System.String' while attempting to activate 'ThesisManagementSystem.Forms.UpdateStatusForm'.) (Error while validating the service descriptor 'ServiceType: ThesisManagementSystem.Forms.EditMilestoneForm Lifetime: Transient ImplementationType: ThesisManagementSystem.Forms.EditMilestoneForm': Unable to resolve service for type 'ThesisManagement.Entities.Milestone' while attempting to activate 'ThesisManagementSystem.Forms.EditMilestoneForm'.) (Error while validating the service descriptor 'ServiceType: ThesisManagementSystem.Forms.EditDocumentForm Lifetime: Transient ImplementationType: ThesisManagementSystem.Forms.EditDocumentForm': Unable to resolve service for type 'System.String' while attempting to activate 'ThesisManagementSystem.Forms.EditDocumentForm'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ThesisManagementSystem.Forms.RemoveLecturerForm Lifetime: Transient ImplementationType: ThesisManagementSystem.Forms.RemoveLecturerForm': Unable to resolve service for type 'System.Collections.Generic.List`1[ThesisManagement.Entities.CommitteeMember]' while attempting to activate 'ThesisManagementSystem.Forms.RemoveLecturerForm'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'System.Collections.Generic.List`1[ThesisManagement.Entities.CommitteeMember]' while attempting to activate 'ThesisManagementSystem.Forms.RemoveLecturerForm'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.InitializeServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at ThesisManagementSystem.Program.Main() in D:\Code\WF\ThesisManagementSystem\ThesisManagementSystem\Program.cs:line 40
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ThesisManagementSystem.Forms.UpdateStatusForm Lifetime: Transient ImplementationType: ThesisManagementSystem.Forms.UpdateStatusForm': Unable to resolve service for type 'System.String' while attempting to activate 'ThesisManagementSystem.Forms.UpdateStatusForm'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'System.String' while attempting to activate 'ThesisManagementSystem.Forms.UpdateStatusForm'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+ ---> (Inner Exception #2) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ThesisManagementSystem.Forms.EditMilestoneForm Lifetime: Transient ImplementationType: ThesisManagementSystem.Forms.EditMilestoneForm': Unable to resolve service for type 'ThesisManagement.Entities.Milestone' while attempting to activate 'ThesisManagementSystem.Forms.EditMilestoneForm'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'ThesisManagement.Entities.Milestone' while attempting to activate 'ThesisManagementSystem.Forms.EditMilestoneForm'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+ ---> (Inner Exception #3) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: ThesisManagementSystem.Forms.EditDocumentForm Lifetime: Transient ImplementationType: ThesisManagementSystem.Forms.EditDocumentForm': Unable to resolve service for type 'System.String' while attempting to activate 'ThesisManagementSystem.Forms.EditDocumentForm'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'System.String' while attempting to activate 'ThesisManagementSystem.Forms.EditDocumentForm'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
