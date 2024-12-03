@@ -174,17 +174,17 @@ namespace ThesisManagementSystem.Forms
         private void DgvGiangVien_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
             // Kiểm tra xem thay đổi có ở cột "VaiTro" không
-            if (e.RowIndex >= 0 && dgvGiangVien.Columns[e.ColumnIndex].Name == "VaiTro")
+            if (e.RowIndex >= 0 && dgvGiangVien.Columns[e.ColumnIndex].Name == "Role")
             {
                 // Lấy giá trị chuỗi từ cột VaiTro
-                string vaiTroChuoi = dgvGiangVien.Rows[e.RowIndex].Cells["VaiTro"].Value.ToString();
+                string vaiTroChuoi = dgvGiangVien.Rows[e.RowIndex].Cells["Role"].Value.ToString();
 
                 // Chuyển đổi chuỗi sang Enum
                 if (Enum.TryParse(vaiTroChuoi, out RoleCommitteeMember vaiTroChon))
                 {
                     // Cập nhật vào danh sách dữ liệu nguồn
                     var currentRow = this.dgvGiangVien.Rows[e.RowIndex].DataBoundItem;
-                    dgvGiangVien.Rows[e.RowIndex].Cells["VaiTro"].Value = vaiTroChon;
+                    dgvGiangVien.Rows[e.RowIndex].Cells["Role"].Value = vaiTroChon;
                 }
                 else
                 {

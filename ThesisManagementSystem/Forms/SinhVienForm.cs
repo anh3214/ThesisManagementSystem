@@ -44,15 +44,15 @@ namespace ThesisManagementSystem.Forms
 
         private async void FormSinhVien_Load(object sender, EventArgs e)
         {
-            LoadDuLieuAsync().GetAwaiter();
-            SetVisibilityNutAsync().GetAwaiter();
+            await LoadDuLieuAsync();
+            await SetVisibilityNutAsync();
         }
 
         private async Task LoadDuLieuAsync()
         {
             try
             {
-                TaiThongTinSinhVien().GetAwaiter();
+                await TaiThongTinSinhVien();
                 await TaiThongTinNhom();
             }
             catch (Exception ex)

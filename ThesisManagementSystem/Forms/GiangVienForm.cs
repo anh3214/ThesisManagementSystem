@@ -400,8 +400,8 @@ namespace ThesisManagementSystem.Forms
         private async void btnTaiLai_Click(object sender, EventArgs e)
         {
             await TaiDeTai();
-            TaiNhom().GetAwaiter();
-            TaiNhomHoiDong().GetAwaiter();
+            await TaiNhom();
+            await TaiNhomHoiDong();
         }
 
         private async void dgvNhomSinhVien_SelectionChanged(object sender, EventArgs e)
