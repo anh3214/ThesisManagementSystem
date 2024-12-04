@@ -47,10 +47,12 @@ namespace ThesisManagementSystem.Forms
             }
 
             txtTenDangNhap.Text = _nguoiDung.Username;
-            cmbVaiTro.SelectedItem = _nguoiDung.Role.ToString();
-
-            // Hiển thị các trường bổ sung dựa trên vai trò
-            cmbVaiTro_SelectedIndexChanged(null, null);
+            cmbVaiTro.SelectedItem = _nguoiDung.Role switch
+            {
+                Role.Student => "Sinh viên",
+                Role.Lecturer => "Giảng viên",
+                _ => "Quản trị viên",
+            };
 
             if (_nguoiDung.Role == Role.Lecturer)
             {
@@ -61,6 +63,7 @@ namespace ThesisManagementSystem.Forms
             {
                 txtHoTen.Text = _nguoiDung.Student?.Name;
                 txtLop.Text = _nguoiDung.Student?.Class;
+                txtMSSV.Text = _nguoiDung.Student?.MSSV;
             }
         }
 
@@ -75,6 +78,8 @@ namespace ThesisManagementSystem.Forms
             txtKhoa.Visible = false;
             lblLop.Visible = false;
             txtLop.Visible = false;
+            lblMSSV.Visible = false;
+            txtMSSV.Visible = false;
 
             if (vaiTroChon == "Giảng viên")
             {
@@ -89,6 +94,8 @@ namespace ThesisManagementSystem.Forms
                 txtHoTen.Visible = true;
                 lblLop.Visible = true;
                 txtLop.Visible = true;
+                lblMSSV.Visible = true;
+                txtMSSV.Visible = true;
             }
         }
 

@@ -132,24 +132,21 @@ namespace ThesisManagement.BLL.Services
 
         public async Task<User> GetUserById(Guid userId)
         {
-            return await _unitOfWork.Users.GetById(userId);
+            return await _unitOfWork.Users.GetById(userId, nameof(User.Student), nameof(User.Lecturer));
         }
 
-        private string HashPassword(string password)
+        private static string HashPassword(string password)
         {
-            using (SHA256 sha256 = SHA256.Create())
+            byte[] bytes = SHA256.HashData(Encoding.UTF8.GetBytes(password));
+            StringBuilder builder = new StringBuilder();
+            foreach (var b in bytes)
             {
-                byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
-                StringBuilder builder = new StringBuilder();
-                foreach (var b in bytes)
-                {
-                    builder.Append(b.ToString("x2"));
-                }
-                return builder.ToString();
+                builder.Append(b.ToString("x2"));
             }
+            return builder.ToString();
         }
 
-        private bool VerifyPassword(string inputPassword, string storedHashedPassword)
+        private static bool VerifyPassword(string inputPassword, string storedHashedPassword)
         {
             string hashedInput = HashPassword(inputPassword);
             return hashedInput.Equals(storedHashedPassword, StringComparison.OrdinalIgnoreCase);

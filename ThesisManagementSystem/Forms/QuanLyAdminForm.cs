@@ -60,7 +60,12 @@ namespace ThesisManagementSystem.Forms
                 {
                     u.UserID,
                     u.Username,
-                    VaiTro = u.Role.ToString(),
+                    VaiTro = u.Role switch
+                    {
+                        Role.Student => "Sinh viên",
+                        Role.Lecturer => "Giảng viên",
+                        _ => "Quản trị viên"
+                    },
                     Ten = u.Role == Role.Student ? u.Student?.Name :
                           u.Role == Role.Lecturer ? u.Lecturer?.Name : "N/A",
                     ThongTinBoSung = u.Role == Role.Student ? u.Student?.Class :

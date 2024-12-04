@@ -17,6 +17,8 @@
         private Button btnHuy;
         private Label lblHoTen;
         private TextBox txtHoTen;
+        private Label lblMSSV;
+        private TextBox txtMSSV;
 
         protected override void Dispose(bool disposing)
         {
@@ -29,192 +31,196 @@
 
         private void InitializeComponent()
         {
-            this.lblTenDangNhap = new Label();
-            this.txtTenDangNhap = new TextBox();
-            this.lblMatKhau = new Label();
-            this.txtMatKhau = new TextBox();
-            this.lblVaiTro = new Label();
-            this.cmbVaiTro = new ComboBox();
-            this.lblKhoa = new Label();
-            this.txtKhoa = new TextBox();
-            this.lblLop = new Label();
-            this.txtLop = new TextBox();
-            this.btnLuu = new Button();
-            this.btnHuy = new Button();
-            this.SuspendLayout();
-
+            lblTenDangNhap = new Label();
+            txtTenDangNhap = new TextBox();
+            lblMatKhau = new Label();
+            txtMatKhau = new TextBox();
+            lblVaiTro = new Label();
+            cmbVaiTro = new ComboBox();
+            lblKhoa = new Label();
+            txtKhoa = new TextBox();
+            lblLop = new Label();
+            txtLop = new TextBox();
+            btnLuu = new Button();
+            btnHuy = new Button();
+            lblHoTen = new Label();
+            txtHoTen = new TextBox();
+            lblMSSV = new Label();
+            txtMSSV = new TextBox();
+            SuspendLayout();
             // 
             // lblTenDangNhap
             // 
-            this.lblTenDangNhap.AutoSize = true;
-            this.lblTenDangNhap.Location = new Point(30, 30);
-            this.lblTenDangNhap.Name = "lblTenDangNhap";
-            this.lblTenDangNhap.Size = new Size(89, 15);
-            this.lblTenDangNhap.TabIndex = 0;
-            this.lblTenDangNhap.Text = "Tên đăng nhập:";
-
+            lblTenDangNhap.AutoSize = true;
+            lblTenDangNhap.Location = new Point(30, 30);
+            lblTenDangNhap.Name = "lblTenDangNhap";
+            lblTenDangNhap.Size = new Size(89, 15);
+            lblTenDangNhap.TabIndex = 0;
+            lblTenDangNhap.Text = "Tên đăng nhập:";
             // 
             // txtTenDangNhap
             // 
-            this.txtTenDangNhap.Location = new Point(130, 27);
-            this.txtTenDangNhap.Name = "txtTenDangNhap";
-            this.txtTenDangNhap.Size = new Size(200, 23);
-            this.txtTenDangNhap.TabIndex = 1;
-
+            txtTenDangNhap.Location = new Point(130, 27);
+            txtTenDangNhap.Name = "txtTenDangNhap";
+            txtTenDangNhap.Size = new Size(200, 23);
+            txtTenDangNhap.TabIndex = 1;
             // 
             // lblMatKhau
             // 
-            this.lblMatKhau.AutoSize = true;
-            this.lblMatKhau.Location = new Point(30, 70);
-            this.lblMatKhau.Name = "lblMatKhau";
-            this.lblMatKhau.Size = new Size(63, 15);
-            this.lblMatKhau.TabIndex = 2;
-            this.lblMatKhau.Text = "Mật khẩu:";
-
+            lblMatKhau.AutoSize = true;
+            lblMatKhau.Location = new Point(30, 70);
+            lblMatKhau.Name = "lblMatKhau";
+            lblMatKhau.Size = new Size(60, 15);
+            lblMatKhau.TabIndex = 2;
+            lblMatKhau.Text = "Mật khẩu:";
             // 
             // txtMatKhau
             // 
-            this.txtMatKhau.Location = new Point(130, 67);
-            this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.PasswordChar = '*';
-            this.txtMatKhau.Size = new Size(200, 23);
-            this.txtMatKhau.TabIndex = 3;
-
-            // 
-            // lblHoTen
-            // 
-            this.lblHoTen = new Label();
-            this.lblHoTen.AutoSize = true;
-            this.lblHoTen.Location = new Point(30, 110);
-            this.lblHoTen.Name = "lblHoTen";
-            this.lblHoTen.Size = new Size(51, 15);
-            this.lblHoTen.TabIndex = 4;
-            this.lblHoTen.Text = "Họ Tên:";
-            this.lblHoTen.Visible = false;
-
-            // 
-            // txtHoTen
-            // 
-            this.txtHoTen = new TextBox();
-            this.txtHoTen.Location = new Point(130, 107);
-            this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new Size(200, 23);
-            this.txtHoTen.TabIndex = 5;
-            this.txtHoTen.Visible = false;
-
+            txtMatKhau.Location = new Point(130, 67);
+            txtMatKhau.Name = "txtMatKhau";
+            txtMatKhau.PasswordChar = '*';
+            txtMatKhau.Size = new Size(200, 23);
+            txtMatKhau.TabIndex = 3;
             // 
             // lblVaiTro
             // 
-            this.lblVaiTro.AutoSize = true;
-            this.lblVaiTro.Location = new Point(30, 110);
-            this.lblVaiTro.Name = "lblVaiTro";
-            this.lblVaiTro.Size = new Size(48, 15);
-            this.lblVaiTro.TabIndex = 4;
-            this.lblVaiTro.Text = "Vai trò:";
-
+            lblVaiTro.AutoSize = true;
+            lblVaiTro.Location = new Point(30, 110);
+            lblVaiTro.Name = "lblVaiTro";
+            lblVaiTro.Size = new Size(43, 15);
+            lblVaiTro.TabIndex = 4;
+            lblVaiTro.Text = "Vai trò:";
             // 
             // cmbVaiTro
             // 
-            this.cmbVaiTro.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.cmbVaiTro.FormattingEnabled = true;
-            this.cmbVaiTro.Items.AddRange(new object[] {
-            "Admin",
-            "Giảng viên",
-            "Sinh viên"});
-            this.cmbVaiTro.Location = new Point(130, 107);
-            this.cmbVaiTro.Name = "cmbVaiTro";
-            this.cmbVaiTro.Size = new Size(200, 23);
-            this.cmbVaiTro.TabIndex = 5;
-            this.cmbVaiTro.SelectedIndexChanged += new EventHandler(this.cmbVaiTro_SelectedIndexChanged);
-
+            cmbVaiTro.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbVaiTro.FormattingEnabled = true;
+            cmbVaiTro.Items.AddRange(new object[] { "Admin", "Giảng viên", "Sinh viên" });
+            cmbVaiTro.Location = new Point(130, 107);
+            cmbVaiTro.Name = "cmbVaiTro";
+            cmbVaiTro.Size = new Size(200, 23);
+            cmbVaiTro.TabIndex = 5;
+            cmbVaiTro.SelectedIndexChanged += cmbVaiTro_SelectedIndexChanged;
+            // 
+            // lblHoTen
+            // 
+            lblHoTen.AutoSize = true;
+            lblHoTen.Location = new Point(30, 150);
+            lblHoTen.Name = "lblHoTen";
+            lblHoTen.Size = new Size(48, 15);
+            lblHoTen.TabIndex = 6;
+            lblHoTen.Text = "Họ Tên:";
+            lblHoTen.Visible = false;
+            // 
+            // txtHoTen
+            // 
+            txtHoTen.Location = new Point(130, 147);
+            txtHoTen.Name = "txtHoTen";
+            txtHoTen.Size = new Size(200, 23);
+            txtHoTen.TabIndex = 7;
+            txtHoTen.Visible = false;
             // 
             // lblKhoa
             // 
-            this.lblKhoa.AutoSize = true;
-            this.lblKhoa.Location = new Point(30, 150);
-            this.lblKhoa.Name = "lblKhoa";
-            this.lblKhoa.Size = new Size(36, 15);
-            this.lblKhoa.TabIndex = 6;
-            this.lblKhoa.Text = "Khoa:";
-            this.lblKhoa.Visible = false;
-
+            lblKhoa.AutoSize = true;
+            lblKhoa.Location = new Point(30, 190);
+            lblKhoa.Name = "lblKhoa";
+            lblKhoa.Size = new Size(37, 15);
+            lblKhoa.TabIndex = 8;
+            lblKhoa.Text = "Khoa:";
+            lblKhoa.Visible = false;
             // 
             // txtKhoa
             // 
-            this.txtKhoa.Location = new Point(130, 147);
-            this.txtKhoa.Name = "txtKhoa";
-            this.txtKhoa.Size = new Size(200, 23);
-            this.txtKhoa.TabIndex = 7;
-            this.txtKhoa.Visible = false;
-
+            txtKhoa.Location = new Point(130, 187);
+            txtKhoa.Name = "txtKhoa";
+            txtKhoa.Size = new Size(200, 23);
+            txtKhoa.TabIndex = 9;
+            txtKhoa.Visible = false;
             // 
             // lblLop
             // 
-            this.lblLop.AutoSize = true;
-            this.lblLop.Location = new Point(30, 190);
-            this.lblLop.Name = "lblLop";
-            this.lblLop.Size = new Size(31, 15);
-            this.lblLop.TabIndex = 8;
-            this.lblLop.Text = "Lớp:";
-            this.lblLop.Visible = false;
-
+            lblLop.AutoSize = true;
+            lblLop.Location = new Point(30, 230);
+            lblLop.Name = "lblLop";
+            lblLop.Size = new Size(30, 15);
+            lblLop.TabIndex = 10;
+            lblLop.Text = "Lớp:";
+            lblLop.Visible = false;
             // 
             // txtLop
             // 
-            this.txtLop.Location = new Point(130, 187);
-            this.txtLop.Name = "txtLop";
-            this.txtLop.Size = new Size(200, 23);
-            this.txtLop.TabIndex = 9;
-            this.txtLop.Visible = false;
-
+            txtLop.Location = new Point(130, 227);
+            txtLop.Name = "txtLop";
+            txtLop.Size = new Size(200, 23);
+            txtLop.TabIndex = 11;
+            txtLop.Visible = false;
+            // 
+            // lblMSSV
+            // 
+            lblMSSV.AutoSize = true;
+            lblMSSV.Location = new Point(30, 270);
+            lblMSSV.Name = "lblMSSV";
+            lblMSSV.Size = new Size(37, 15);
+            lblMSSV.TabIndex = 12;
+            lblMSSV.Text = "MSSV:";
+            lblMSSV.Visible = false;
+            // 
+            // txtMSSV
+            // 
+            txtMSSV.Location = new Point(130, 267);
+            txtMSSV.Name = "txtMSSV";
+            txtMSSV.Size = new Size(200, 23);
+            txtMSSV.TabIndex = 13;
+            txtMSSV.Visible = false;
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new Point(130, 230);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new Size(75, 30);
-            this.btnLuu.TabIndex = 10;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
-            this.btnLuu.Click += new EventHandler(this.btnLuu_Click);
-
+            btnLuu.Location = new Point(130, 310);
+            btnLuu.Name = "btnLuu";
+            btnLuu.Size = new Size(75, 30);
+            btnLuu.TabIndex = 14;
+            btnLuu.Text = "Lưu";
+            btnLuu.UseVisualStyleBackColor = true;
+            btnLuu.Click += btnLuu_Click;
             // 
             // btnHuy
             // 
-            this.btnHuy.Location = new Point(245, 230);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new Size(75, 30);
-            this.btnHuy.TabIndex = 11;
-            this.btnHuy.Text = "Hủy";
-            this.btnHuy.UseVisualStyleBackColor = true;
-            this.btnHuy.Click += new EventHandler(this.btnHuy_Click);
-
+            btnHuy.Location = new Point(245, 310);
+            btnHuy.Name = "btnHuy";
+            btnHuy.Size = new Size(75, 30);
+            btnHuy.TabIndex = 15;
+            btnHuy.Text = "Hủy";
+            btnHuy.UseVisualStyleBackColor = true;
+            btnHuy.Click += btnHuy_Click;
             // 
             // ChinhSuaNguoiDungForm
             // 
-            this.AutoScaleDimensions = new SizeF(7F, 15F);
-            this.AutoScaleMode = AutoScaleMode.Font;
-            this.ClientSize = new Size(360, 280);
-            this.Controls.Add(this.btnHuy);
-            this.Controls.Add(this.btnLuu);
-            this.Controls.Add(this.txtLop);
-            this.Controls.Add(this.lblLop);
-            this.Controls.Add(this.txtKhoa);
-            this.Controls.Add(this.lblKhoa);
-            this.Controls.Add(this.cmbVaiTro);
-            this.Controls.Add(this.lblVaiTro);
-            this.Controls.Add(this.txtMatKhau);
-            this.Controls.Add(this.lblMatKhau);
-            this.Controls.Add(this.txtTenDangNhap);
-            this.Controls.Add(this.lblTenDangNhap);
-            this.Controls.Add(this.lblHoTen);
-            this.Controls.Add(this.txtHoTen);
-
-            this.Name = "ChinhSuaNguoiDungForm";
-            this.Text = "Chỉnh sửa người dùng";
-            this.Load += new EventHandler(this.ChinhSuaNguoiDungForm_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(360, 360);
+            Controls.Add(btnHuy);
+            Controls.Add(btnLuu);
+            Controls.Add(txtMSSV);
+            Controls.Add(lblMSSV);
+            Controls.Add(txtLop);
+            Controls.Add(lblLop);
+            Controls.Add(txtKhoa);
+            Controls.Add(lblKhoa);
+            Controls.Add(txtHoTen);
+            Controls.Add(lblHoTen);
+            Controls.Add(cmbVaiTro);
+            Controls.Add(lblVaiTro);
+            Controls.Add(txtMatKhau);
+            Controls.Add(lblMatKhau);
+            Controls.Add(txtTenDangNhap);
+            Controls.Add(lblTenDangNhap);
+            Name = "ChinhSuaNguoiDungForm";
+            Text = "Chỉnh sửa người dùng";
+            Load += ChinhSuaNguoiDungForm_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
+
     }
 }

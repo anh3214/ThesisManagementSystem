@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "D:\\Code\\WF\\ThesisManagementSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2AB37404-C34D-4B28-955B-67FFEED4EC9B}|ThesisManagement.BLL\\ThesisManagement.BLL.csproj|d:\\code\\wf\\thesismanagementsystem\\thesismanagement.bll\\services\\userservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AB37404-C34D-4B28-955B-67FFEED4EC9B}|ThesisManagement.BLL\\ThesisManagement.BLL.csproj|solutionrelative:thesismanagement.bll\\services\\userservice .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|d:\\code\\wf\\thesismanagementsystem\\thesismanagementsystem\\forms\\chinhsuanguoidungform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|solutionrelative:thesismanagementsystem\\forms\\chinhsuanguoidungform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|d:\\code\\wf\\thesismanagementsystem\\thesismanagementsystem\\forms\\chinhsuanguoidungform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|solutionrelative:thesismanagementsystem\\forms\\chinhsuanguoidungform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|d:\\code\\wf\\thesismanagementsystem\\thesismanagementsystem\\forms\\chinhsuanguoidungform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|solutionrelative:thesismanagementsystem\\forms\\chinhsuanguoidungform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|d:\\code\\wf\\thesismanagementsystem\\thesismanagementsystem\\forms\\taonguoidungform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|solutionrelative:thesismanagementsystem\\forms\\taonguoidungform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|d:\\code\\wf\\thesismanagementsystem\\thesismanagementsystem\\forms\\taonguoidungform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|solutionrelative:thesismanagementsystem\\forms\\taonguoidungform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|d:\\code\\wf\\thesismanagementsystem\\thesismanagementsystem\\forms\\quanlyadminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|solutionrelative:thesismanagementsystem\\forms\\quanlyadminform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|d:\\code\\wf\\thesismanagementsystem\\thesismanagementsystem\\forms\\sinhvienform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|solutionrelative:thesismanagementsystem\\forms\\sinhvienform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,7 +55,7 @@
       "RelativeMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|solutionrelative:thesismanagementsystem\\forms\\dangnhapform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|d:\\code\\wf\\thesismanagementsystem\\thesismanagementsystem\\forms\\giangvienform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|D:\\Code\\WF\\ThesisManagementSystem\\thesismanagementsystem\\forms\\giangvienform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|solutionrelative:thesismanagementsystem\\forms\\giangvienform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -43,19 +71,108 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SinhVienForm.Designer.cs",
-              "DocumentMoniker": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\SinhVienForm.Designer.cs",
-              "RelativeDocumentMoniker": "ThesisManagementSystem\\Forms\\SinhVienForm.Designer.cs",
-              "ToolTip": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\SinhVienForm.Designer.cs",
-              "RelativeToolTip": "ThesisManagementSystem\\Forms\\SinhVienForm.Designer.cs",
-              "ViewState": "AgIAAHEBAAAAAAAAAAAowIkBAAAAAAAAAAAAAA==",
+              "Title": "UserService .cs",
+              "DocumentMoniker": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagement.BLL\\Services\\UserService .cs",
+              "RelativeDocumentMoniker": "ThesisManagement.BLL\\Services\\UserService .cs",
+              "ToolTip": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagement.BLL\\Services\\UserService .cs",
+              "RelativeToolTip": "ThesisManagement.BLL\\Services\\UserService .cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAIA7wJIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T18:29:10.147Z",
+              "WhenOpened": "2024-12-04T12:05:40.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChinhSuaNguoiDungForm.cs [Design]",
+              "DocumentMoniker": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\ChinhSuaNguoiDungForm.cs",
+              "RelativeDocumentMoniker": "ThesisManagementSystem\\Forms\\ChinhSuaNguoiDungForm.cs",
+              "ToolTip": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\ChinhSuaNguoiDungForm.cs [Design]",
+              "RelativeToolTip": "ThesisManagementSystem\\Forms\\ChinhSuaNguoiDungForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T12:01:16.063Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TaoNguoiDungForm.Designer.cs",
+              "DocumentMoniker": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\TaoNguoiDungForm.Designer.cs",
+              "RelativeDocumentMoniker": "ThesisManagementSystem\\Forms\\TaoNguoiDungForm.Designer.cs",
+              "ToolTip": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\TaoNguoiDungForm.Designer.cs",
+              "RelativeToolTip": "ThesisManagementSystem\\Forms\\TaoNguoiDungForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T11:58:38.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TaoNguoiDungForm.cs",
+              "DocumentMoniker": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\TaoNguoiDungForm.cs",
+              "RelativeDocumentMoniker": "ThesisManagementSystem\\Forms\\TaoNguoiDungForm.cs",
+              "ToolTip": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\TaoNguoiDungForm.cs",
+              "RelativeToolTip": "ThesisManagementSystem\\Forms\\TaoNguoiDungForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T11:58:29.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChinhSuaNguoiDungForm.Designer.cs",
+              "DocumentMoniker": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\ChinhSuaNguoiDungForm.Designer.cs",
+              "RelativeDocumentMoniker": "ThesisManagementSystem\\Forms\\ChinhSuaNguoiDungForm.Designer.cs",
+              "ToolTip": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\ChinhSuaNguoiDungForm.Designer.cs",
+              "RelativeToolTip": "ThesisManagementSystem\\Forms\\ChinhSuaNguoiDungForm.Designer.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAcwBMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T11:49:19.999Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ChinhSuaNguoiDungForm.cs",
+              "DocumentMoniker": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\ChinhSuaNguoiDungForm.cs",
+              "RelativeDocumentMoniker": "ThesisManagementSystem\\Forms\\ChinhSuaNguoiDungForm.cs",
+              "ToolTip": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\ChinhSuaNguoiDungForm.cs",
+              "RelativeToolTip": "ThesisManagementSystem\\Forms\\ChinhSuaNguoiDungForm.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAIAywCgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T11:46:49.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "QuanLyAdminForm.cs",
+              "DocumentMoniker": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\QuanLyAdminForm.cs",
+              "RelativeDocumentMoniker": "ThesisManagementSystem\\Forms\\QuanLyAdminForm.cs",
+              "ToolTip": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\QuanLyAdminForm.cs",
+              "RelativeToolTip": "ThesisManagementSystem\\Forms\\QuanLyAdminForm.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAAEAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T14:53:01.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SinhVienForm.Designer.cs",
+              "DocumentMoniker": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\SinhVienForm.Designer.cs",
+              "RelativeDocumentMoniker": "ThesisManagementSystem\\Forms\\SinhVienForm.Designer.cs",
+              "ToolTip": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\SinhVienForm.Designer.cs",
+              "RelativeToolTip": "ThesisManagementSystem\\Forms\\SinhVienForm.Designer.cs",
+              "ViewState": "AgIAAHEBAAAAAAAAAAAowH4BAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T18:29:10.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "SinhVienForm.cs",
               "DocumentMoniker": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\SinhVienForm.cs",
               "RelativeDocumentMoniker": "ThesisManagementSystem\\Forms\\SinhVienForm.cs",
@@ -63,12 +180,11 @@
               "RelativeToolTip": "ThesisManagementSystem\\Forms\\SinhVienForm.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAAAEcAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T18:27:36.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T18:27:36.512Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "CommitteeService.cs",
               "DocumentMoniker": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagement.BLL\\Services\\CommitteeService.cs",
               "RelativeDocumentMoniker": "ThesisManagement.BLL\\Services\\CommitteeService.cs",
@@ -76,12 +192,11 @@
               "RelativeToolTip": "ThesisManagement.BLL\\Services\\CommitteeService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T18:17:48.339Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T18:17:48.339Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "GiangVienForm.Designer.cs",
               "DocumentMoniker": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\GiangVienForm.Designer.cs",
               "RelativeDocumentMoniker": "ThesisManagementSystem\\Forms\\GiangVienForm.Designer.cs",
@@ -89,12 +204,11 @@
               "RelativeToolTip": "ThesisManagementSystem\\Forms\\GiangVienForm.Designer.cs",
               "ViewState": "AgIAAEsBAAAAAAAAAAApwGgBAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T18:17:36.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T18:17:36.745Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "GiangVienForm.cs",
               "DocumentMoniker": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\GiangVienForm.cs",
               "RelativeDocumentMoniker": "ThesisManagementSystem\\Forms\\GiangVienForm.cs",
@@ -107,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "DangNhapForm.cs",
               "DocumentMoniker": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\DangNhapForm.cs",
               "RelativeDocumentMoniker": "ThesisManagementSystem\\Forms\\DangNhapForm.cs",
@@ -115,20 +229,18 @@
               "RelativeToolTip": "ThesisManagementSystem\\Forms\\DangNhapForm.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAApwC4AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T18:17:24.416Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T18:17:24.416Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "GiangVienForm.cs [Design]",
               "DocumentMoniker": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\GiangVienForm.cs",
               "RelativeDocumentMoniker": "ThesisManagementSystem\\Forms\\GiangVienForm.cs",
               "ToolTip": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\GiangVienForm.cs [Design]",
               "RelativeToolTip": "ThesisManagementSystem\\Forms\\GiangVienForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T18:17:11.757Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-02T18:17:11.757Z"
             }
           ]
         }
