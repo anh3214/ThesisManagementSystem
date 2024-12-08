@@ -10,6 +10,7 @@ using ThesisManagement.Entities.Db;
 using ThesisManagementSystem.Forms;
 using Serilog;
 using ThesisManagement.Entities;
+using ThesisManagementSystem.Forms.StudentForm;
 
 namespace ThesisManagementSystem
 {

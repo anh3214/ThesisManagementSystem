@@ -47,6 +47,12 @@
             this.btnXacNhan = new System.Windows.Forms.Button();
             this.btnHuyBo = new System.Windows.Forms.Button();
             this.SuspendLayout();
+
+            // Set background color and image for the form
+            this.BackColor = System.Drawing.Color.LightBlue;
+            this.BackgroundImage = System.Drawing.Image.FromFile("path_to_your_image.jpg");
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+
             // 
             // lblTenMocThoiGian
             // 
@@ -56,6 +62,7 @@
             this.lblTenMocThoiGian.Size = new System.Drawing.Size(109, 17);
             this.lblTenMocThoiGian.TabIndex = 0;
             this.lblTenMocThoiGian.Text = "Mốc thời gian: ...";
+
             // 
             // lblTenNhom
             // 
@@ -65,6 +72,7 @@
             this.lblTenNhom.Size = new System.Drawing.Size(67, 17);
             this.lblTenNhom.TabIndex = 1;
             this.lblTenNhom.Text = "Nhóm: ...";
+
             // 
             // lblDiem
             // 
@@ -74,6 +82,7 @@
             this.lblDiem.Size = new System.Drawing.Size(47, 17);
             this.lblDiem.TabIndex = 2;
             this.lblDiem.Text = "Điểm:";
+
             // 
             // txtDiem
             // 
@@ -81,6 +90,7 @@
             this.txtDiem.Name = "txtDiem";
             this.txtDiem.Size = new System.Drawing.Size(100, 22);
             this.txtDiem.TabIndex = 3;
+
             // 
             // lblNhanXet
             // 
@@ -90,6 +100,7 @@
             this.lblNhanXet.Size = new System.Drawing.Size(69, 17);
             this.lblNhanXet.TabIndex = 4;
             this.lblNhanXet.Text = "Nhận xét:";
+
             // 
             // txtNhanXet
             // 
@@ -98,6 +109,7 @@
             this.txtNhanXet.Name = "txtNhanXet";
             this.txtNhanXet.Size = new System.Drawing.Size(200, 60);
             this.txtNhanXet.TabIndex = 5;
+
             // 
             // btnXacNhan
             // 
@@ -108,6 +120,7 @@
             this.btnXacNhan.Text = "Xác nhận";
             this.btnXacNhan.UseVisualStyleBackColor = true;
             this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
+
             // 
             // btnHuyBo
             // 
@@ -118,6 +131,7 @@
             this.btnHuyBo.Text = "Hủy bỏ";
             this.btnHuyBo.UseVisualStyleBackColor = true;
             this.btnHuyBo.Click += new System.EventHandler(this.btnHuyBo_Click);
+
             // 
             // DanhGiaForm
             // 
@@ -137,6 +151,7 @@
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
 
         #endregion
     }

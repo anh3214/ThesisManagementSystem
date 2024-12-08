@@ -5,7 +5,7 @@ using System.Linq;
 using System.Windows.Forms;
 using ThesisManagement.Entities;
 
-namespace ThesisManagementSystem.Forms
+namespace ThesisManagementSystem.Forms.StudentForm
 {
     public partial class ChonDetaiForm : Form
     {
@@ -116,8 +116,8 @@ namespace ThesisManagementSystem.Forms
                     Lecturer = new Lecturer { Name = supervisor } // Simplified
                 };
 
-                this.DialogResult = DialogResult.OK;
-                this.Close();
+                DialogResult = DialogResult.OK;
+                Close();
             }
             else
             {
@@ -127,8 +127,8 @@ namespace ThesisManagementSystem.Forms
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.Cancel;
-            this.Close();
+            DialogResult = DialogResult.Cancel;
+            Close();
         }
 
         private DataGridView dgvTheses;

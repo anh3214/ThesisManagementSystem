@@ -27,6 +27,12 @@ namespace ThesisManagementSystem.Forms
             lblCotMoc = new Label();
             lblDuongDanTaiLieu = new Label();
             SuspendLayout();
+
+            // Set background color and image for the form
+            this.BackColor = System.Drawing.Color.LightBlue;
+            this.BackgroundImage = System.Drawing.Image.FromFile("path_to_your_image.jpg");
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+
             // 
             // cmbCotMoc
             // 
@@ -37,6 +43,7 @@ namespace ThesisManagementSystem.Forms
             cmbCotMoc.Name = "cmbCotMoc";
             cmbCotMoc.Size = new Size(233, 23);
             cmbCotMoc.TabIndex = 0;
+
             // 
             // txtDuongDanTaiLieu
             // 
@@ -45,6 +52,7 @@ namespace ThesisManagementSystem.Forms
             txtDuongDanTaiLieu.Name = "txtDuongDanTaiLieu";
             txtDuongDanTaiLieu.Size = new Size(233, 23);
             txtDuongDanTaiLieu.TabIndex = 1;
+
             // 
             // btnNop
             // 
@@ -56,6 +64,7 @@ namespace ThesisManagementSystem.Forms
             btnNop.Text = "Nộp";
             btnNop.UseVisualStyleBackColor = true;
             btnNop.Click += btnNop_Click;
+
             // 
             // lblCotMoc
             // 
@@ -66,6 +75,7 @@ namespace ThesisManagementSystem.Forms
             lblCotMoc.Size = new Size(56, 15);
             lblCotMoc.TabIndex = 3;
             lblCotMoc.Text = "Cột Mốc:";
+
             // 
             // lblDuongDanTaiLieu
             // 
@@ -76,6 +86,7 @@ namespace ThesisManagementSystem.Forms
             lblDuongDanTaiLieu.Size = new Size(113, 15);
             lblDuongDanTaiLieu.TabIndex = 4;
             lblDuongDanTaiLieu.Text = "Đường Dẫn Tài Liệu:";
+
             // 
             // NopTaiLieuForm
             // 

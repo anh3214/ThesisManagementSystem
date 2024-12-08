@@ -52,6 +52,7 @@
             this.lblTenNhom.Size = new System.Drawing.Size(65, 15);
             this.lblTenNhom.TabIndex = 0;
             this.lblTenNhom.Text = "Tên Nhóm:";
+            this.lblTenNhom.BackColor = System.Drawing.Color.LightBlue;
             // 
             // txtTenNhom
             // 
@@ -59,6 +60,7 @@
             this.txtTenNhom.Name = "txtTenNhom";
             this.txtTenNhom.Size = new System.Drawing.Size(200, 23);
             this.txtTenNhom.TabIndex = 1;
+            this.txtTenNhom.BackColor = System.Drawing.Color.LightYellow;
             // 
             // lblGiangVien
             // 
@@ -68,6 +70,7 @@
             this.lblGiangVien.Size = new System.Drawing.Size(70, 15);
             this.lblGiangVien.TabIndex = 2;
             this.lblGiangVien.Text = "Giảng Viên:";
+            this.lblGiangVien.BackColor = System.Drawing.Color.LightBlue;
             // 
             // cmbGiangVien
             // 
@@ -77,6 +80,7 @@
             this.cmbGiangVien.Name = "cmbGiangVien";
             this.cmbGiangVien.Size = new System.Drawing.Size(200, 23);
             this.cmbGiangVien.TabIndex = 3;
+            this.cmbGiangVien.BackColor = System.Drawing.Color.LightYellow;
             // 
             // lblHoiDong
             // 
@@ -86,6 +90,7 @@
             this.lblHoiDong.Size = new System.Drawing.Size(62, 15);
             this.lblHoiDong.TabIndex = 4;
             this.lblHoiDong.Text = "Hội Đồng:";
+            this.lblHoiDong.BackColor = System.Drawing.Color.LightBlue;
             // 
             // cmbHoiDong
             // 
@@ -95,6 +100,7 @@
             this.cmbHoiDong.Name = "cmbHoiDong";
             this.cmbHoiDong.Size = new System.Drawing.Size(200, 23);
             this.cmbHoiDong.TabIndex = 5;
+            this.cmbHoiDong.BackColor = System.Drawing.Color.LightYellow;
             // 
             // lblNgayBaoVe
             // 
@@ -104,6 +110,7 @@
             this.lblNgayBaoVe.Size = new System.Drawing.Size(80, 15);
             this.lblNgayBaoVe.TabIndex = 6;
             this.lblNgayBaoVe.Text = "Ngày Bảo Vệ:";
+            this.lblNgayBaoVe.BackColor = System.Drawing.Color.LightBlue;
             // 
             // dtpNgayBaoVe
             // 
@@ -112,6 +119,7 @@
             this.dtpNgayBaoVe.Name = "dtpNgayBaoVe";
             this.dtpNgayBaoVe.Size = new System.Drawing.Size(200, 23);
             this.dtpNgayBaoVe.TabIndex = 7;
+            this.dtpNgayBaoVe.BackColor = System.Drawing.Color.LightYellow;
             // 
             // btnLuu
             // 
@@ -122,6 +130,7 @@
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            this.btnLuu.BackColor = System.Drawing.Color.LightGreen;
             // 
             // btnHuy
             // 
@@ -132,6 +141,7 @@
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
+            this.btnHuy.BackColor = System.Drawing.Color.LightCoral;
             // 
             // ChinhSuaNhomForm
             // 
@@ -154,8 +164,10 @@
             this.Name = "ChinhSuaNhomForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Chỉnh sửa nhóm";
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
     }
 }

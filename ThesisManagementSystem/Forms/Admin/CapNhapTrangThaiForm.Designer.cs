@@ -34,6 +34,7 @@
             this.cmbTrangThai.Name = "cmbTrangThai";
             this.cmbTrangThai.Size = new Size(200, 23);
             this.cmbTrangThai.TabIndex = 0;
+            this.cmbTrangThai.BackColor = Color.LightYellow;
 
             // 
             // lblTrangThai
@@ -44,6 +45,7 @@
             this.lblTrangThai.Size = new Size(68, 15);
             this.lblTrangThai.TabIndex = 1;
             this.lblTrangThai.Text = "Trạng thái:";
+            this.lblTrangThai.BackColor = Color.LightBlue;
 
             // 
             // btnXacNhan
@@ -55,6 +57,7 @@
             this.btnXacNhan.Text = "Xác nhận";
             this.btnXacNhan.UseVisualStyleBackColor = true;
             this.btnXacNhan.Click += new EventHandler(this.btnXacNhan_Click);
+            this.btnXacNhan.BackColor = Color.LightGreen;
 
             // 
             // btnHuy
@@ -66,6 +69,7 @@
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
             this.btnHuy.Click += new EventHandler(this.btnHuy_Click);
+            this.btnHuy.BackColor = Color.LightCoral;
 
             // 
             // CapNhatTrangThaiForm
@@ -79,8 +83,10 @@
             this.Controls.Add(this.cmbTrangThai);
             this.Name = "CapNhatTrangThaiForm";
             this.Text = "Cập nhật trạng thái đăng ký";
+            this.BackColor = Color.LightGray;
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
     }
 }

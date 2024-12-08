@@ -57,6 +57,7 @@
             lblTenDangNhap.Size = new Size(89, 15);
             lblTenDangNhap.TabIndex = 0;
             lblTenDangNhap.Text = "Tên đăng nhập:";
+            lblTenDangNhap.BackColor = System.Drawing.Color.LightBlue;
             // 
             // txtTenDangNhap
             // 
@@ -64,6 +65,7 @@
             txtTenDangNhap.Name = "txtTenDangNhap";
             txtTenDangNhap.Size = new Size(200, 23);
             txtTenDangNhap.TabIndex = 1;
+            txtTenDangNhap.BackColor = System.Drawing.Color.LightYellow;
             // 
             // lblMatKhau
             // 
@@ -73,6 +75,7 @@
             lblMatKhau.Size = new Size(60, 15);
             lblMatKhau.TabIndex = 2;
             lblMatKhau.Text = "Mật khẩu:";
+            lblMatKhau.BackColor = System.Drawing.Color.LightBlue;
             // 
             // txtMatKhau
             // 
@@ -81,6 +84,7 @@
             txtMatKhau.PasswordChar = '*';
             txtMatKhau.Size = new Size(200, 23);
             txtMatKhau.TabIndex = 3;
+            txtMatKhau.BackColor = System.Drawing.Color.LightYellow;
             // 
             // lblVaiTro
             // 
@@ -90,6 +94,7 @@
             lblVaiTro.Size = new Size(43, 15);
             lblVaiTro.TabIndex = 4;
             lblVaiTro.Text = "Vai trò:";
+            lblVaiTro.BackColor = System.Drawing.Color.LightBlue;
             // 
             // cmbVaiTro
             // 
@@ -100,6 +105,7 @@
             cmbVaiTro.Name = "cmbVaiTro";
             cmbVaiTro.Size = new Size(200, 23);
             cmbVaiTro.TabIndex = 5;
+            cmbVaiTro.BackColor = System.Drawing.Color.LightYellow;
             cmbVaiTro.SelectedIndexChanged += cmbVaiTro_SelectedIndexChanged;
             // 
             // lblHoTen
@@ -111,6 +117,7 @@
             lblHoTen.TabIndex = 6;
             lblHoTen.Text = "Họ Tên:";
             lblHoTen.Visible = false;
+            lblHoTen.BackColor = System.Drawing.Color.LightBlue;
             // 
             // txtHoTen
             // 
@@ -119,6 +126,7 @@
             txtHoTen.Size = new Size(200, 23);
             txtHoTen.TabIndex = 7;
             txtHoTen.Visible = false;
+            txtHoTen.BackColor = System.Drawing.Color.LightYellow;
             // 
             // lblKhoa
             // 
@@ -129,6 +137,7 @@
             lblKhoa.TabIndex = 8;
             lblKhoa.Text = "Khoa:";
             lblKhoa.Visible = false;
+            lblKhoa.BackColor = System.Drawing.Color.LightBlue;
             // 
             // txtKhoa
             // 
@@ -137,6 +146,7 @@
             txtKhoa.Size = new Size(200, 23);
             txtKhoa.TabIndex = 9;
             txtKhoa.Visible = false;
+            txtKhoa.BackColor = System.Drawing.Color.LightYellow;
             // 
             // lblLop
             // 
@@ -147,6 +157,7 @@
             lblLop.TabIndex = 10;
             lblLop.Text = "Lớp:";
             lblLop.Visible = false;
+            lblLop.BackColor = System.Drawing.Color.LightBlue;
             // 
             // txtLop
             // 
@@ -155,6 +166,7 @@
             txtLop.Size = new Size(200, 23);
             txtLop.TabIndex = 11;
             txtLop.Visible = false;
+            txtLop.BackColor = System.Drawing.Color.LightYellow;
             // 
             // lblMSSV
             // 
@@ -165,6 +177,7 @@
             lblMSSV.TabIndex = 12;
             lblMSSV.Text = "MSSV:";
             lblMSSV.Visible = false;
+            lblMSSV.BackColor = System.Drawing.Color.LightBlue;
             // 
             // txtMSSV
             // 
@@ -173,6 +186,7 @@
             txtMSSV.Size = new Size(200, 23);
             txtMSSV.TabIndex = 13;
             txtMSSV.Visible = false;
+            txtMSSV.BackColor = System.Drawing.Color.LightYellow;
             // 
             // btnLuu
             // 
@@ -183,6 +197,7 @@
             btnLuu.Text = "Lưu";
             btnLuu.UseVisualStyleBackColor = true;
             btnLuu.Click += btnLuu_Click;
+            btnLuu.BackColor = System.Drawing.Color.LightGreen;
             // 
             // btnHuy
             // 
@@ -193,6 +208,7 @@
             btnHuy.Text = "Hủy";
             btnHuy.UseVisualStyleBackColor = true;
             btnHuy.Click += btnHuy_Click;
+            btnHuy.BackColor = System.Drawing.Color.LightCoral;
             // 
             // ChinhSuaNguoiDungForm
             // 
@@ -218,6 +234,7 @@
             Name = "ChinhSuaNguoiDungForm";
             Text = "Chỉnh sửa người dùng";
             Load += ChinhSuaNguoiDungForm_Load;
+            BackColor = System.Drawing.Color.LightGray;
             ResumeLayout(false);
             PerformLayout();
         }

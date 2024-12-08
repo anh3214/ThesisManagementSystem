@@ -26,6 +26,12 @@
             this.btnDongY = new System.Windows.Forms.Button();
             this.btnHuyBo = new System.Windows.Forms.Button();
             this.SuspendLayout();
+
+            // Set background color and image for the form
+            this.BackColor = System.Drawing.Color.LightBlue;
+            this.BackgroundImage = System.Drawing.Image.FromFile("path_to_your_image.jpg");
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+
             // 
             // txtTen
             // 
@@ -82,5 +88,6 @@
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
     }
 }

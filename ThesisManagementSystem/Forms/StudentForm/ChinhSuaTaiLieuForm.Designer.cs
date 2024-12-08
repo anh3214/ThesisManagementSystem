@@ -33,6 +33,11 @@ namespace ThesisManagementSystem.Forms
 
             SuspendLayout();
 
+            // Set background color and image for the form
+            this.BackColor = System.Drawing.Color.LightYellow;
+            this.BackgroundImage = System.Drawing.Image.FromFile("path_to_your_image.jpg");
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+
             // 
             // lblTaiLieuHienTai
             // 

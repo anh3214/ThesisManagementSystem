@@ -27,6 +27,12 @@ namespace ThesisManagementSystem.Forms
             this.btnHuy = new Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGiangVienKhongCo)).BeginInit();
             this.SuspendLayout();
+
+            // Set background color and image for the form
+            this.BackColor = System.Drawing.Color.LightGreen;
+            this.BackgroundImage = System.Drawing.Image.FromFile("path_to_your_image.jpg");
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+
             // 
             // lblGiangVienKhongCo
             // 
@@ -36,6 +42,7 @@ namespace ThesisManagementSystem.Forms
             this.lblGiangVienKhongCo.Size = new Size(135, 15);
             this.lblGiangVienKhongCo.TabIndex = 0;
             this.lblGiangVienKhongCo.Text = "Giảng Viên Có Sẵn:";
+
             // 
             // dgvGiangVienKhongCo
             // 
@@ -45,12 +52,13 @@ namespace ThesisManagementSystem.Forms
             this.dgvGiangVienKhongCo.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGiangVienKhongCo.Location = new Point(20, 50);
             this.dgvGiangVienKhongCo.Name = "dgvGiangVienKhongCo";
-            this.dgvGiangVienKhongCo.ReadOnly = false; // Đảm bảo DataGridView không phải chế độ chỉ đọc
-            this.dgvGiangVienKhongCo.EditMode = DataGridViewEditMode.EditOnEnter; // Bật chế độ chỉnh sửa khi click vào checkbox
+            this.dgvGiangVienKhongCo.ReadOnly = false; // Ensure DataGridView is not read-only
+            this.dgvGiangVienKhongCo.EditMode = DataGridViewEditMode.EditOnEnter; // Enable edit mode on enter
             this.dgvGiangVienKhongCo.CellValueChanged += DgvGiangVienKhongCo_CellValueChanged;
             this.dgvGiangVienKhongCo.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             this.dgvGiangVienKhongCo.Size = new Size(600, 300);
             this.dgvGiangVienKhongCo.TabIndex = 1;
+
             // 
             // btnThemGiangVien
             // 
@@ -61,6 +69,7 @@ namespace ThesisManagementSystem.Forms
             this.btnThemGiangVien.Text = "Thêm Giảng Viên";
             this.btnThemGiangVien.UseVisualStyleBackColor = true;
             this.btnThemGiangVien.Click += new EventHandler(this.btnThemGiangVien_Click);
+
             // 
             // btnHuy
             // 
@@ -71,6 +80,7 @@ namespace ThesisManagementSystem.Forms
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
             this.btnHuy.Click += new EventHandler(this.btnHuy_Click);
+
             // 
             // ThemGiangVienVaoHoiDongForm
             // 

@@ -40,6 +40,11 @@ namespace ThesisManagementSystem.Forms
             ((System.ComponentModel.ISupportInitialize)(this.dgvGiangVien)).BeginInit();
             this.SuspendLayout();
 
+            // Set background color and image for the form
+            this.BackColor = System.Drawing.Color.LightGreen;
+            this.BackgroundImage = System.Drawing.Image.FromFile("path_to_your_image.jpg");
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+
             // 
             // lblTenHoiDong
             // 
@@ -96,8 +101,8 @@ namespace ThesisManagementSystem.Forms
             this.dgvGiangVien.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGiangVien.Location = new Point(30, 130);
             this.dgvGiangVien.Name = "dgvGiangVien";
-            this.dgvGiangVien.ReadOnly = false; // Đảm bảo DataGridView không phải chế độ chỉ đọc
-            this.dgvGiangVien.EditMode = DataGridViewEditMode.EditOnEnter; // Bật chế độ chỉnh sửa khi click vào checkbox
+            this.dgvGiangVien.ReadOnly = false; // Ensure DataGridView is not read-only
+            this.dgvGiangVien.EditMode = DataGridViewEditMode.EditOnEnter; // Enable edit mode on enter
             this.dgvGiangVien.CellValueChanged += new DataGridViewCellEventHandler(this.DgvGiangVien_CellValueChanged);
             this.dgvGiangVien.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             this.dgvGiangVien.Size = new Size(500, 200);
@@ -172,6 +177,7 @@ namespace ThesisManagementSystem.Forms
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
 
     }
 }

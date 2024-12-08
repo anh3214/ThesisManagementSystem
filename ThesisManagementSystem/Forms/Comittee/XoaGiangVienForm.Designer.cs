@@ -27,6 +27,11 @@ namespace ThesisManagementSystem.Forms
             this.lblGiangVienChon = new Label();
             this.SuspendLayout();
 
+            // Set background color and image for the form
+            this.BackColor = System.Drawing.Color.LightCoral;
+            this.BackgroundImage = System.Drawing.Image.FromFile("path_to_your_image.jpg");
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+
             // 
             // lblGiangVienChon
             // 

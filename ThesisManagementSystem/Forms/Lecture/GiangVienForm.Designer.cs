@@ -68,8 +68,8 @@ namespace ThesisManagementSystem.Forms
             this.btnXoaDeTai = new System.Windows.Forms.Button();
             this.groupBoxNhomSinhVien = new System.Windows.Forms.GroupBox();
             this.dgvNhomSinhVien = new System.Windows.Forms.DataGridView();
-            this.groupBoxNhomHoiDongCham = new System.Windows.Forms.GroupBox(); // Khởi tạo GroupBoxNhomHoiDongCham
-            this.dgvNhomHoiDongCham = new System.Windows.Forms.DataGridView(); // Khởi tạo dgvNhomHoiDongCham
+            this.groupBoxNhomHoiDongCham = new System.Windows.Forms.GroupBox();
+            this.dgvNhomHoiDongCham = new System.Windows.Forms.DataGridView();
             this.groupBoxKiHan = new System.Windows.Forms.GroupBox();
             this.dgvKiHan = new System.Windows.Forms.DataGridView();
             this.groupBoxNopVanBan = new System.Windows.Forms.GroupBox();
@@ -80,16 +80,17 @@ namespace ThesisManagementSystem.Forms
             this.groupBoxChiTietNhom = new System.Windows.Forms.GroupBox();
             this.txtChiTietNhom = new System.Windows.Forms.TextBox();
             this.tableLayoutPanelChinh = new System.Windows.Forms.TableLayoutPanel();
-            this.flowLayoutPanelTopTrai = new System.Windows.Forms.FlowLayoutPanel(); // Khởi tạo FlowLayoutPanelTopLeft
-            this.btnDangXuat = new System.Windows.Forms.Button(); // Khởi tạo btnDangXuat
-            this.btnDanhGiaNhom = new System.Windows.Forms.Button(); // Khởi tạo btnDanhGiaNhom
+            this.flowLayoutPanelTopTrai = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnDangXuat = new System.Windows.Forms.Button();
+            this.btnDanhGiaNhom = new System.Windows.Forms.Button();
+
             this.groupBoxQuanLyDeTai.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDeTai)).BeginInit();
             this.flowLayoutPanelNutDeTai.SuspendLayout();
             this.groupBoxNhomSinhVien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhomSinhVien)).BeginInit();
-            this.groupBoxNhomHoiDongCham.SuspendLayout(); // Tạm dừng Layout cho Nhóm Hội Đồng Chấm
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNhomHoiDongCham)).BeginInit(); // Bắt đầu Init dgvNhomHoiDongCham
+            this.groupBoxNhomHoiDongCham.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNhomHoiDongCham)).BeginInit();
             this.groupBoxKiHan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKiHan)).BeginInit();
             this.groupBoxNopVanBan.SuspendLayout();
@@ -97,7 +98,7 @@ namespace ThesisManagementSystem.Forms
             this.flowLayoutPanelNutChinh.SuspendLayout();
             this.groupBoxChiTietNhom.SuspendLayout();
             this.tableLayoutPanelChinh.SuspendLayout();
-            this.flowLayoutPanelTopTrai.SuspendLayout(); // Tạm dừng Layout cho FlowLayoutPanelTopLeft
+            this.flowLayoutPanelTopTrai.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTenGiangVien
@@ -453,6 +454,10 @@ namespace ThesisManagementSystem.Forms
             this.Name = "FormGiangVien";
             this.Text = "Bảng Điều Khiển Giảng Viên";
             this.Load += new System.EventHandler(this.FormGiangVien_Load);
+
+            // Đặt màu nền cho Form
+            this.BackColor = System.Drawing.Color.LightBlue;
+
             this.groupBoxQuanLyDeTai.ResumeLayout(false);
             this.groupBoxQuanLyDeTai.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDeTai)).EndInit();
@@ -460,8 +465,8 @@ namespace ThesisManagementSystem.Forms
             this.flowLayoutPanelNutDeTai.PerformLayout();
             this.groupBoxNhomSinhVien.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhomSinhVien)).EndInit();
-            this.groupBoxNhomHoiDongCham.ResumeLayout(false); // Tiếp tục Layout cho Nhóm Hội Đồng Chấm
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNhomHoiDongCham)).EndInit(); // Kết thúc Init dgvNhomHoiDongCham
+            this.groupBoxNhomHoiDongCham.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNhomHoiDongCham)).EndInit();
             this.groupBoxKiHan.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKiHan)).EndInit();
             this.groupBoxNopVanBan.ResumeLayout(false);

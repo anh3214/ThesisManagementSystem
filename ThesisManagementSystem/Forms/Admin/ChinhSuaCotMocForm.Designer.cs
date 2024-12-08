@@ -33,6 +33,7 @@
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(260, 20);
             this.txtTen.TabIndex = 0;
+            this.txtTen.BackColor = System.Drawing.Color.LightYellow;
             // 
             // txtMoTa
             // 
@@ -41,6 +42,7 @@
             this.txtMoTa.Name = "txtMoTa";
             this.txtMoTa.Size = new System.Drawing.Size(260, 60);
             this.txtMoTa.TabIndex = 1;
+            this.txtMoTa.BackColor = System.Drawing.Color.LightCyan;
             // 
             // dtpHanNop
             // 
@@ -48,6 +50,7 @@
             this.dtpHanNop.Name = "dtpHanNop";
             this.dtpHanNop.Size = new System.Drawing.Size(260, 20);
             this.dtpHanNop.TabIndex = 2;
+            this.dtpHanNop.CalendarMonthBackground = System.Drawing.Color.LightPink;
             // 
             // btnXacNhan
             // 
@@ -58,6 +61,7 @@
             this.btnXacNhan.Text = "Xác nhận";
             this.btnXacNhan.UseVisualStyleBackColor = true;
             this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
+            this.btnXacNhan.BackColor = System.Drawing.Color.LightGreen;
             // 
             // btnHuy
             // 
@@ -68,6 +72,7 @@
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
+            this.btnHuy.BackColor = System.Drawing.Color.LightCoral;
             // 
             // ChinhSuaMocThoiGianForm
             // 
@@ -79,8 +84,10 @@
             this.Controls.Add(this.txtTen);
             this.Name = "ChinhSuaMocThoiGianForm";
             this.Text = "Chỉnh sửa mốc thời gian";
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
     }
 }

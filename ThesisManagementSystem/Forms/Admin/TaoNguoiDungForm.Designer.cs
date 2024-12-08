@@ -50,6 +50,12 @@ namespace ThesisManagementSystem.Forms
             lblMSSV = new Label();
             txtHoTen = new TextBox();
             SuspendLayout();
+
+            // Set background color and image for the form
+            this.BackColor = System.Drawing.Color.LightGreen;
+            this.BackgroundImage = System.Drawing.Image.FromFile("path_to_your_image.jpg");
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+
             // 
             // lblTenDangNhap
             // 
@@ -222,5 +228,6 @@ namespace ThesisManagementSystem.Forms
             ResumeLayout(false);
             PerformLayout();
         }
+
     }
 }

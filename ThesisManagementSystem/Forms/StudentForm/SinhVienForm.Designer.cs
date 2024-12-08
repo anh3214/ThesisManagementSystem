@@ -477,6 +477,16 @@ namespace ThesisManagementSystem.Forms
             Name = "FormSinhVien";
             Text = "Cổng Sinh Viên";
             Load += FormSinhVien_Load;
+
+            // Thêm màu nền cho Form
+            this.BackColor = Color.WhiteSmoke;
+
+            // Thêm màu nền cho các TabPage
+            tabNhom.BackColor = Color.LightCyan;
+            tabDeTai.BackColor = Color.Honeydew;
+            tabKetQua.BackColor = Color.LavenderBlush;
+            tabNopVanBan.BackColor = Color.AliceBlue;
+
             tabControl.ResumeLayout(false);
             tabNhom.ResumeLayout(false);
             tabNhom.PerformLayout();
