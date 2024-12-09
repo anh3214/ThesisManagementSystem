@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Code\\WF\\ThesisManagementSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|d:\\code\\wf\\thesismanagementsystem\\thesismanagementsystem\\forms\\admin\\taonguoidungform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|solutionrelative:thesismanagementsystem\\forms\\admin\\taonguoidungform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|d:\\code\\wf\\thesismanagementsystem\\thesismanagementsystem\\forms\\studentform\\sinhvienform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|solutionrelative:thesismanagementsystem\\forms\\studentform\\sinhvienform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|d:\\code\\wf\\thesismanagementsystem\\thesismanagementsystem\\forms\\studentform\\sinhvienform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|solutionrelative:thesismanagementsystem\\forms\\studentform\\sinhvienform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -11,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|solutionrelative:thesismanagementsystem\\forms\\studentform\\sinhvienform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|d:\\code\\wf\\thesismanagementsystem\\thesismanagementsystem\\forms\\studentform\\noptailieuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|D:\\Code\\WF\\ThesisManagementSystem\\thesismanagementsystem\\forms\\studentform\\noptailieuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|solutionrelative:thesismanagementsystem\\forms\\studentform\\noptailieuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -19,7 +27,7 @@
       "RelativeMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|solutionrelative:thesismanagementsystem\\forms\\studentform\\noptailieuform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|d:\\code\\wf\\thesismanagementsystem\\thesismanagementsystem\\forms\\studentform\\chinhsuatailieuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|D:\\Code\\WF\\ThesisManagementSystem\\thesismanagementsystem\\forms\\studentform\\chinhsuatailieuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{92EC7EB6-CB9E-4B4E-A740-BF6EA949032F}|ThesisManagementSystem\\ThesisManagementSystem.csproj|solutionrelative:thesismanagementsystem\\forms\\studentform\\chinhsuatailieuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -30,11 +38,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TaoNguoiDungForm.Designer.cs",
+              "DocumentMoniker": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\Admin\\TaoNguoiDungForm.Designer.cs",
+              "RelativeDocumentMoniker": "ThesisManagementSystem\\Forms\\Admin\\TaoNguoiDungForm.Designer.cs",
+              "ToolTip": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\Admin\\TaoNguoiDungForm.Designer.cs",
+              "RelativeToolTip": "ThesisManagementSystem\\Forms\\Admin\\TaoNguoiDungForm.Designer.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAtwDoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T14:07:07.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SinhVienForm.cs",
+              "DocumentMoniker": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\StudentForm\\SinhVienForm.cs",
+              "RelativeDocumentMoniker": "ThesisManagementSystem\\Forms\\StudentForm\\SinhVienForm.cs",
+              "ToolTip": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\StudentForm\\SinhVienForm.cs",
+              "RelativeToolTip": "ThesisManagementSystem\\Forms\\StudentForm\\SinhVienForm.cs",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAtwA8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T14:06:34.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "SinhVienForm.cs [Design]",
               "DocumentMoniker": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\StudentForm\\SinhVienForm.cs",
               "RelativeDocumentMoniker": "ThesisManagementSystem\\Forms\\StudentForm\\SinhVienForm.cs",
@@ -46,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "SinhVienForm.Designer.cs",
               "DocumentMoniker": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\StudentForm\\SinhVienForm.Designer.cs",
               "RelativeDocumentMoniker": "ThesisManagementSystem\\Forms\\StudentForm\\SinhVienForm.Designer.cs",
@@ -59,19 +97,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "NopTaiLieuForm.cs [Design]",
               "DocumentMoniker": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\StudentForm\\NopTaiLieuForm.cs",
               "RelativeDocumentMoniker": "ThesisManagementSystem\\Forms\\StudentForm\\NopTaiLieuForm.cs",
               "ToolTip": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\StudentForm\\NopTaiLieuForm.cs [Design]",
               "RelativeToolTip": "ThesisManagementSystem\\Forms\\StudentForm\\NopTaiLieuForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T12:06:16.656Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-08T12:06:16.656Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "NopTaiLieuForm.Designer.cs",
               "DocumentMoniker": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\StudentForm\\NopTaiLieuForm.Designer.cs",
               "RelativeDocumentMoniker": "ThesisManagementSystem\\Forms\\StudentForm\\NopTaiLieuForm.Designer.cs",
@@ -79,24 +116,18 @@
               "RelativeToolTip": "ThesisManagementSystem\\Forms\\StudentForm\\NopTaiLieuForm.Designer.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAwwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T12:04:50.577Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "WhenOpened": "2024-12-08T12:04:50.577Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ChinhSuaTaiLieuForm.cs [Design]",
               "DocumentMoniker": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\StudentForm\\ChinhSuaTaiLieuForm.cs",
               "RelativeDocumentMoniker": "ThesisManagementSystem\\Forms\\StudentForm\\ChinhSuaTaiLieuForm.cs",
               "ToolTip": "D:\\Code\\WF\\ThesisManagementSystem\\ThesisManagementSystem\\Forms\\StudentForm\\ChinhSuaTaiLieuForm.cs [Design]",
               "RelativeToolTip": "ThesisManagementSystem\\Forms\\StudentForm\\ChinhSuaTaiLieuForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T12:04:45.01Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-08T12:04:45.01Z"
             }
           ]
         }

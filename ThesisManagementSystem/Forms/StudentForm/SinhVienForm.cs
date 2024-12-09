@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ThesisManagement.BLL.Interfaces;
 using ThesisManagement.Entities;
+using ThesisManagementSystem.Forms.StudentForm;
 
 namespace ThesisManagementSystem.Forms
 {
